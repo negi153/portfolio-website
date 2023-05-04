@@ -3,6 +3,7 @@ This repo contains the portfolio website.
 
 ## Setup
 - [Youtube video url](https://www.youtube.com/watch?v=q5J5ho7YUhA)
+- [Youtube video url 2](https://youtu.be/YfmYUtGOaTg)
 - Download node from [Node website](https://nodejs.org/en/download)
 - check on terminal.
     `node -v`
