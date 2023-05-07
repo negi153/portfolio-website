@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- link custom style sheet -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
@@ -33,12 +39,63 @@
     // const app = initializeApp(firebaseConfig);
 </script>
 
-<script src="app.js" defer></script>
+<!-- <script src="app.js" defer></script> -->
 
 </head>
 <body>
 
-    <h1>Welcome to first firebase website</h1>
+    <div class="container">
+        <!-- Below is the navigation bar -->
+        <nav>
+            <div class="logo">Folio<b>.</b></div>
+            <ul class="navItems">
+                <li> <a href="#">home</a></li>
+                <li> <a href="#">about</a></li>
+                <li> <a href="#">skills</a></li>
+                <li> <a href="#">projects</a></li>
+            </ul>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/mukesh-singh-negi-14b97017a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="https://github.com/negi153" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </nav>
+
+
+        <div class="wrapper">
+            
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1>I'm <span class="multiText"></span></h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate recusandae, fugit quos cum corporis possimus consectetur quod, quaerat, omnis repellendus esse nam reiciendis. Accusamus ex impedit quis consequuntur dolorem. Minus.</p>
+                <div class="btns">
+                    <button onclick="window.location.href = 'docs/resume.pdf';">Download CV</button>
+                    <button>Hire me</button>
+                </div>
+            </div>
+
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="" id="splash">
+                    <img src="" >
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings:["Mukesh Singh Negi","Coder","Data Engineer", "Big data developer", "Cloud developer"],
+            loop : true,
+            typeSpeed:100,
+            backSpeed:80,
+            backDelay:1500
+        })
+    </script>
     
 </body>
 </html>

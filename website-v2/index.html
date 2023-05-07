@@ -37,10 +37,10 @@
             
             <div class="cols cols0">
                 <span class="topline">Hello</span>
-                <h1>I'm <span class="multiText">Coder</span></h1>
+                <h1>I'm <span class="multiText"></span></h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate recusandae, fugit quos cum corporis possimus consectetur quod, quaerat, omnis repellendus esse nam reiciendis. Accusamus ex impedit quis consequuntur dolorem. Minus.</p>
                 <div class="btns">
-                    <button>Download CV</button>
+                    <button onclick="window.location.href = 'docs/resume.pdf';">Download CV</button>
                     <button>Hire me</button>
                 </div>
             </div>
@@ -57,7 +57,16 @@
 
     </div>
 
-
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings:["Mukesh Singh Negi","Coder","Data Engineer", "Big data developer", "Cloud developer"],
+            loop : true,
+            typeSpeed:100,
+            backSpeed:80,
+            backDelay:1500
+        })
+    </script>
 
 </body>
 </html>
